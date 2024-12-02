@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'MyFont'; /* Custom font name */
+    src: url('assets/Nourd/nourd_semi_bold.ttf') format('truetype'); /* Path to .ttf file */
+}
+@keyframes highlight {
+    from {
+      background-position: 0;
+      height: 150%;
+    }
+
+    to {
+      background-position: -100% ;
+      height: 150%;
+    }
+}
+h1 {
+    font-family: 'MyFont', sans-serif; /* Use the custom font */
+    font-size: 5rem;
+}
+
+.header {
+    display: flex;        
+    justify-content: end;        
+    align-items: center;        
+    padding: 5px 20px;      
+    padding-bottom: 0px;
+    position: fixed;        
+    top: 0;        
+    left: 0;        
+    right: 0;        
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+
+}
+
+.heading {
+    margin: 0px; /* Ensure no margins around the heading */
+}
+.highlighted span {
+    display: inline-block;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, #00008b 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: highlight 1.5s linear forwards;
+    /* Runs once */
+  }
+
+.header img {
+    width: 50px;
+    margin-left: 10px; 
+    padding-top: 20px;
+    
+}
+.desc {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.descintro {
+    font-size: 1.25rem;
+    
+}
+.nayana {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    padding-right: 100px;
+}
+
+.projects {
+    padding-top: 150px;
+}
+
+.projects .container {
+    display: flex;
+    justify-content: ;
+}
+
+.intro {
+    padding-top: 75px;
+}
+
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 600px) {
+    .header img {
+        width: 25px; /* Adjust icon size for smaller screens */
+    }
+    .nayana {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        padding-right: 100px;
+    }
+
+}
+
+
+body{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 200px;
+  padding-top: 50px;
+}
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+button {
+    background-color:white;
+    color:darkblue;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    padding:12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+}
+button:hover {
+    background-color: darkblue;
+    color: white;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+}
