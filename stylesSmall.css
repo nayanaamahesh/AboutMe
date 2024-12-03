@@ -70,7 +70,7 @@ h1 {
         padding-left: 200px;
     }
     .introName {
-        font-size: 70px;
+        font-size: 3rem;
     }
     .nayana {
         width: 300px; 
@@ -97,12 +97,7 @@ h1 {
         border-radius: 50%; 
         object-fit: cover; 
         padding-right: 0px;
-        background-color: red;
-    }
-
-    .introName {
-        font-size: 50px;
-    }       
+    }    
 }
 
 
@@ -340,7 +335,10 @@ button:hover {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 950px) {
+    .desc {
+       padding: 0px; 
+    }
     .column {
         display:inline;
     }
