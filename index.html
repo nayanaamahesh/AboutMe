@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="stylesSmall.css" media="screen and (max-width: 1200px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
 </head>
-  <body> 
+  <body id = "intro"> 
     <div class = header>
     <div>
     <a href = "https://nayana-resume.tiiny.site/" target = "_blank" ><img src = "assets/images/document_icon.png" alt = "document-icon" width = 40px></a>
     <a href = "https://nayanasblog.my.canva.site/" target = "_blank"><img src = "assets/images/blog_icon.png" alt = "blog_icon" width = 40px></a>
-    <img class = "person" src = "assets/images/person_icon.png" alt = "blog_icon" width = 40px>
+    <a href = "#intro"><img class = "person" src = "assets/images/person_icon.png" alt = "blog_icon" width = 40px></a>
     </p>
     </div>
     </div>
     
 
     
-   
+    <h1 class = "introName">hi! i'm <span class = "highlighted" >nayana mahesh</span> </h1>
     <div class = intro>
-        <h1>hi! i'm <span class = "highlighted" >nayana mahesh</span> </h1>
         <div class = "desc">
             <img class = "nayana" src = "assets/images/nayana.jpg" alt = "document-icon">
             <div>
@@ -49,10 +49,11 @@
         <div class="timeline-column left">
             <div class="timeline-item left">
                 <h3>Teaching Assistant - Digital Ethics and Data Privacy</h3>
+                <span class = "line left"></span>
                 <p>National University of Singapore <br> Aug 2024 - Dec 2024</p>
                 <p><ul>
-                    <li><strong>Taught ethical frameworks</strong> in emerging technologies, fostering critical thinking in digital ethics.</li>
-                    <li>Mentored students in <strong>AI ethics and data privacy</strong>, enhancing their understanding of responsible tech development.</li>
+                    <li><strong>Taught ethical frameworks</strong> in emerging technologies</li>
+                    <li>Mentored students in <strong>AI ethics and data privacy</strong></li>
                     <li>Evaluated assignments with actionable feedback, improving comprehension of ethical principles.</li>
                 </ul></p>
             </div>
@@ -67,13 +68,15 @@
             </div>
             <div class="timeline-item right">
                 <h3>Digital Lab Intern</h3>
+                <span class = "line right"></span>
                 <p>Tata Consultancy Services
                     <br>
+                    
                     Jun 2024 - Aug 2024
                 </p>
                 <p><ul>
-                    <li><strong>Developed a PPTX generator</strong> that automated SalesFirst website data consolidation, reducing manual effort by 80% and enabling presentations in 2 seconds.</li>
-                    <li><strong>Created a document analysis tool</strong> that extracts key data from annual reports for efficient front-end integration.</li>
+                    <li><strong>Developed a PPTX generator</strong> that can create presentations in 2 seconds.</li>
+                    <li><strong>Created a document analysis tool</strong> using python and document scraping</li>
                     <li><strong> Conducted a sustainability analysis</strong> on companies, improving ESG metrics by 50% with recommended changes.</li>
                 </ul></p>
             </div>
@@ -84,12 +87,13 @@
         <div class="timeline-column left">
             <div class="timeline-item left">
                 <h3>Finance Intern</h3>
+                <span class = "line left"></span>
                 <p>Walnut.Ai 
                     <br>
                     May 2024 - Jun 2024
                 </p>
                 <p><ul>
-                    <li><strong>Conducted competitor analysis</strong> for Walnut AI, evaluating 8 industry players to identify trends and gaps, enhancing product positioning and marketing strategies.</li>
+                    <li><strong>Conducted competitor analysis</strong> for Walnut AI, enhancing product positioning and marketing strategies.</li>
                     <li><strong>Created a Sales Playbook</strong> and Pre-Sales Pack, streamlining onboarding and improving client engagement.</li>
                 </ul></p>
             </div>
@@ -104,13 +108,14 @@
             </div>
             <div class="timeline-item right">
                 <h3>Data Management Administrator</h3>
+                <span class = "line right"></span>
                 <p>Transit Link | Ministry of National Development
                     <br> Jan 2023 - Mar 2024
                 </p>
                 <p><ul>
-                    <li>Streamlined public transit operations by managing 50,000+ data entries, reducing errors significantly.</li>
-                    <li>Improved EZLink card production efficiency by 20% through hardware and software oversight.</li>
-                    <li>Resolved data discrepancies in high-volume processing, enhancing accuracy and reliability.</li>
+                    <li>Streamlined public transit operations by <strong>managing 50,000+ data entries</strong>, reducing errors significantly.</li>
+                    <li>Improved EZLink card <strong>production efficiency by 20%</strong>through hardware and software oversight.</li>
+                    <li>Resolved <strong>data discrepancies in high-volume processing</strong>, enhancing accuracy and reliability.</li>
                 </ul></p>
             </div>
         </div>
@@ -142,7 +147,8 @@
             <img class = "sf" src = "assets/images/lombok.JPG">
             <p class = "name sfiName">SFI: Leaders at the Fringe. My Journey to Lombok and Sumba</p>
             <p class = "sfiDesc"> 
-                I learnt how local farmers, fishermen, and volunteers are leading sustainable solutions to combat climate change's impact on agriculture, and contributed through tree planting and supporting resilience-building efforts.</p> 
+                I learnt how local farmers, fishermen, and volunteers are leading sustainable solutions to combat climate change's impact on agriculture, and contributed through tree planting and supporting resilience-building efforts.</p>
+                <br> 
             <span class = "sfiButton"><button onclick="window.open('https://rc4.nus.edu.sg/2024/07/12/sfi-indonesia-2024/', '_blank')">Learn More</button></span>
             
         </div> 
