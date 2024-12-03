@@ -318,6 +318,56 @@ button:hover {
     animation: highlight 1.5s linear forwards; /* Runs the animation */
     opacity: 1; /* Makes the text visible */
 }
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Initially hide all timeline items */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(0); /* Ensures no offset before animation starts */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Add animation for left items when the class is added */
+.timeline-item.left.animate {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+/* Add animation for right items when the class is added */
+.timeline-item.right.animate {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+/* Optional: Add delays for staggered animations */
+.timeline-item.left.animate:nth-child(odd),
+.timeline-item.right.animate:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.timeline-item.left.animate:nth-child(even),
+.timeline-item.right.animate:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
 
 
 

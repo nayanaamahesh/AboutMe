@@ -23,3 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
     highlightElements.forEach((element) => observer.observe(element));
   });
   
+  const timelineItems = document.querySelectorAll('.timeline-item');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        }
+    });
+}, { threshold: 0.1 }); // Adjust threshold for when the animation starts
+
+timelineItems.forEach(item => observer.observe(item));
